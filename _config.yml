@@ -19,7 +19,7 @@ description: |
   some assembly required.  
   wonky automation / workflow / scripting & misc
 
-baseurl: "/blog" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_repo: swiss # the GitHub repo name for your project
 github_username: jekyll
