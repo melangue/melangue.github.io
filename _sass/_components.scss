@@ -18,14 +18,25 @@ code {
 
 .prose {
 
+  a {
+    text-decoration: none;
+    color: $color-primary-link;
+  
+    &:hover {
+      color: $color-primary-link;
+      text-decoration: underline;
+    }
+  }
+
   p, ol, ul {
     font-size: $prose-font-size;
     margin-bottom: 1em;
     width: 100%;
 
-    @media (min-width: $breakpoint-lg) {
+    /*always max*/
+   /* @media (min-width: $breakpoint-lg) {
       width: (10 / 12 * 100%); // matches col-10
-    }
+    }*/
 
   }
 

@@ -30,9 +30,10 @@ dl, dd, ol, ul, figure {
 body {
     font-family: $body-font-family;
     font-size: $body-font-size;
-    line-height: 1.5;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
     color: $color-body-text;
-    background-color: #fff;
+    background-color: $body-background;
 }
 
 p {

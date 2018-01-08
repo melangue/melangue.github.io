@@ -1,8 +1,11 @@
-<!-- Renders post date, title, and snippet of text. -->
-<div class="py-2 mb-2 prose">
-  <a class="no-underline h5 bold text-accent" title="{{ post.url | prepend: site.baseurl }}" href="{{ post.url | prepend: site.baseurl }}">{{ post.date | date: "%b %-d, %Y" }}</a>
+<!-- Renders post date, title, and snippet of text. {{ post.content | strip_html | truncatewords:60 }} -->
+<div class="py-2 mb-5 prose">
+  <a class="no-underline h5 bold text-mute" title="{{ post.url | prepend: site.baseurl }}" href="{{ post.url | prepend: site.baseurl }}">{{ post.date | date: "%b %-d, %Y" }}</a>
   <h2 class="h1 lh-condensed col-9 mt-0">
-    <a class="link-primary" title="{{ post.url | prepend: site.baseurl }}" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    <a class="link-primary text-body" title="{{ post.url | prepend: site.baseurl }}" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
   </h2>
-  <p>{{ post.content | strip_html | truncatewords:30 }}</p>
+  <p>{{ post.content }}</p>
+	<!-- <p class="lh-condensed">
+		<a class="link-primary" title="{{ post.url | prepend: site.baseurl }}" href="{{ post.url | prepend: site.baseurl }}">Continue reading →</a>
+	</p> -->
 </div>

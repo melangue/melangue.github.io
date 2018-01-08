@@ -1,0 +1,25 @@
+<div class="container mx-auto clearfix col-2 sm-width-full mb-2">
+  <ul class="list-reset font-smoothing px-2">
+    <li class="inline-block pagination-item-prev" >
+          {% if paginator.previous_page %}
+      {% if paginator.page == 2 %}
+            <a class="align-middle link-primary mr-2" rel="prev" href="{{ site.baseurl }}/">← Previous</a>
+        {% else %}
+        <a class="align-middle link-primary mr-2" rel="prev" href="{{ site.baseurl }}/page-{{paginator.previous_page}}/">&laquo; Previous</a>
+        {% endif %}
+      {% else %}
+      <span class="align-middle text-mute">← Previous</span>
+          {% endif %}
+    </li>
+
+
+    <li class="inline-block pagination-item-next" >
+          {% if paginator.next_page %}
+      <a class="align-middle link-primary mr-2" rel="next" href="{{ site.baseurl }}/page-{{paginator.next_page}}/">Next →</a>
+      {% else %}
+      <span class="align-middle text-mute">Next →</span>
+          {% endif %}
+    </li>
+
+  </ul>
+</div>

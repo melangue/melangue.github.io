@@ -1,0 +1,17 @@
+// Pagination
+
+// Pagination items can be `span`s or `a`s
+.pagination-item {
+      display: inline-block;
+      width: auto;
+
+    &-prev {
+      margin-bottom: 0;
+      float: left;
+    }
+    &-next {
+      margin-left: -1px;
+      text-align: right;
+      float: right;
+    }
+} 

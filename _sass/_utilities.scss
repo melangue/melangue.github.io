@@ -1,4 +1,6 @@
 /* Type utilities */
+
+/* Oversized header title */
 .h0 {
   font-size: $h0-mobile;
   line-height: 1.0125;
@@ -43,10 +45,12 @@
 .header-border { border-color: $color-foreground; }
 .header-title { color: $color-title; }
 .header-text { color: $color-foreground; }
-.header-social { fill: $color-foreground; }
+.header-social { fill: $color-text-mute; }
 .header-social-accent { fill: $color-dot-accent; }
 .header-link:hover { color: $color-nav-link !important; } // used for navigation links on homepage
-.text-accent { color: $color-text-accent; } // used for date in post list and home link
+.text-accent { color: $color-text-accent; } // used for home link
+.text-mute { color: $color-text-mute !important; } // used for date in post list
+.text-body { color: $color-body-text !important; } // used for title in post list
 
 /* Layout utilities */
 .container { max-width: $container-width; }
@@ -129,6 +133,13 @@
 .mb-4 { margin-bottom: $spacer-4; }
 .ml-4 { margin-left: $spacer-4; }
 
+// added 
+
+.mt-5 { margin-top: $spacer-5; }
+.mr-5 { margin-right: $spacer-5; }
+.mb-5 { margin-bottom: $spacer-5; }
+.ml-5 { margin-left: $spacer-5; }
+
 // Responsive margin
 @media (min-width: 52em) {
   .mx-lg-auto { margin-left: auto; margin-right: auto; }
@@ -175,8 +186,9 @@
   font-weight: bold;
   text-decoration: none;
 
+  // Underline on hover  
   &:hover {
     color: $color-primary-link;
-    text-decoration: none;
+    text-decoration: underline;
   }
 }
