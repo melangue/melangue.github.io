@@ -7,9 +7,10 @@
 
     <div>
 
-      <header class="header-background">
+    <!--   <header class="header-background">
 
-        <div class="clearfix border-bottom-thick header-border">
+        <div class="container mx-auto px-2 clearfix border-bottom-thick header-border">
+          
           <ul class="list-reset right py-1 header-text font-smoothing">
             {% for my_page in site.pages %}
               {% if my_page.title %}
@@ -22,9 +23,9 @@
         </div>
 
         <div class="container mx-auto px-2 mb-2 clearfix header-text">
-          <h1 class="h0 inline-block col-9 sm-width-full py-4 mt-3 header-title">{{ site.title }}</h1>
+          <h1 class="h0 inline-block col-9 sm-width-full py-4 mt-3 header-title">{{ site.title }}</h1> -->
 
-          <div class="clearfix mb-4 py-1">
+<!--           <div class="clearfix mb-4 py-1">
             <div class="col-4 sm-width-full left border-top-thin">
               <div class="table">
                 <div class="inline-block mt-3 mr-1">
@@ -37,7 +38,8 @@
                   {% include github.html %}
                 </div>
               </div>
-              <!-- Set site description in config.yml -->
+
+              Set site description in config.yml
               <p class="h4 lh-condensed font-smoothing mt-2 py-1">{{ site.description }}</p>
             </div>
 
@@ -50,15 +52,35 @@
                 </div>
             </div>
           </div>
+ -->
+          
+   <!--        <div class="clearfix mb-2 py-1">
+            <div class="col-9 sm-width-full left">
+              <div class="col-4 sm-width-full left border-bottom-thin"></div> -->
+              <!-- Set site description in config.yml -->
+<!--               <p class="h4 lh-condensed font-smoothing mt-3 py-1">{{ site.description }}</p>
+            </div>
+          </div>
+          
 
         </div>
-      </header>
+      </header> -->
+
+      <div class="mb-2">
+      {% include header.html %}
+
+    </div>
+      <!-- <div class="container mx-auto px-2 py-2"></div>
+ -->
 
       <div class="container mx-auto px-2 py-4">
-        {% for post in site.posts %}
+        {% for post in paginator.posts %}
           {% include post_block.html %}
         {% endfor %}
       </div>
+
+      <!-- pagination -->
+         {% include blog_pagination.html %}
 
     </div>
 
