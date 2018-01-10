@@ -1,4 +1,4 @@
-{% comment %}
+
 <div class="container mx-auto clearfix col-3 sm-width-full mb-2">
   <ul class="list-reset font-smoothing px-2">
     <li class="inline-block pagination-item-prev" >
@@ -13,7 +13,18 @@
           {% endif %}
     </li>
 
-
+    {% for count in (2..paginator.total_pages) %}
+      {% if count == paginator.page %}
+        <li class="inline-block pagination-item-next">
+          <a href="#">{{count}}</a>
+        </li>
+      {% else %}
+        <li class="inline-block pagination-item-next">
+          <a href="/page{{count}}">{{count}}</a>
+        </li>
+      {% endif %}
+    {% endfor %}
+    
     <li class="inline-block pagination-item-next" >
           {% if paginator.next_page %}
       <a class="align-middle link-primary mr-2" rel="next" href="{{ site.baseurl }}/page-{{paginator.next_page}}/">Next →</a>
@@ -24,10 +35,9 @@
 
   </ul>
 </div>
-{% endcomment %}
 
 
-
+{% comment %}
 <div class="container mx-auto clearfix col-3 sm-width-full mb-2">
   <ul class="list-reset font-smoothing px-2">
     {% if paginator.previous_page %}
@@ -76,3 +86,4 @@
     {% endif %}
   </ul>
 </div>
+{% endcomment %}
