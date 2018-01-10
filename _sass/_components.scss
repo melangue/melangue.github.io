@@ -2,10 +2,12 @@
 
 // Code formatting
 pre {
-    border-left: $spacer-1 solid $color-border;
+    // border-left: $spacer-1 solid $color-border;
+    background-color: $white;
     margin: $spacer-3 0;
-    padding-left: 16px;
-    width: (9 / 12 * 100%); // matches col-9
+    padding: $spacer-1 $spacer-2;
+    // padding-left: 16px;
+    width: 100% // (9 / 12 * 100%); matches col-9
     overflow-x: auto;
 }
 
