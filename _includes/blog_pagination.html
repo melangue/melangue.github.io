@@ -1,4 +1,4 @@
-<div class="container mx-auto clearfix col-3 sm-width-full mb-2">
+<div class="container mx-auto clearfix sm-width-full mb-2">
   <ul class="list-reset font-smoothing px-2 text-center">
     <li class="inline-block" >
           {% if paginator.previous_page %}
@@ -13,7 +13,7 @@
     </li>
 
    <li class="inline-block">
-        <span class="align-middle text-mute">{{ paginator.page}} / {{ paginator.total_pages }}</span>
+        <span class="align-middle text-mute px-3">{{ paginator.page}} / {{ paginator.total_pages }}</span>
     </li>
     
     <li class="inline-block" >
