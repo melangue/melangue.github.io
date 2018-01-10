@@ -1,7 +1,6 @@
-
 <div class="container mx-auto clearfix col-3 sm-width-full mb-2">
-  <ul class="list-reset font-smoothing px-2">
-    <li class="inline-block pagination-item-prev" >
+  <ul class="list-reset font-smoothing px-2 text-center">
+    <li class="inline-block" >
           {% if paginator.previous_page %}
       {% if paginator.page == 2 %}
             <a class="align-middle link-primary mr-2" rel="prev" href="{{ site.baseurl }}/">← Previous</a>
@@ -14,10 +13,10 @@
     </li>
 
    <li class="inline-block">
-              <span>{{ paginator.page}} / {{ paginator.total_pages }}</span>
-              </li>
+        <span class="align-middle text-mute">{{ paginator.page}} / {{ paginator.total_pages }}</span>
+    </li>
     
-    <li class="inline-block pagination-item-next" >
+    <li class="inline-block" >
           {% if paginator.next_page %}
       <a class="align-middle link-primary mr-2" rel="next" href="{{ site.baseurl }}/page-{{paginator.next_page}}/">Next →</a>
       {% else %}
@@ -27,55 +26,3 @@
 
   </ul>
 </div>
-
-
-{% comment %}
-<div class="container mx-auto clearfix col-3 sm-width-full mb-2">
-  <ul class="list-reset font-smoothing px-2">
-    {% if paginator.previous_page %}
-      {% if paginator.previous_page == 1 %}
-        <li>
-          <a href="/">&laquo;</a>
-        </li>
-      {% else %}
-        <li>
-          <a href="/page{{paginator.previous_page}}">&laquo;</a>
-        </li>
-      {% endif %}
-    {% else %}
-      <li class="disabled">
-        <a href="#">&laquo;</a>
-      </li>
-    {% endif %}
-    {% if paginator.page == 1 %}
-      <li class="active">
-        <a href="#">1</a>
-      </li>
-    {% else %}
-      <li>
-        <a href="/">1</a>
-      </li>
-    {% endif %}
-    {% for count in (2..paginator.total_pages) %}
-      {% if count == paginator.page %}
-        <li class="active">
-          <a href="#">{{count}}</a>
-        </li>
-      {% else %}
-        <li>
-          <a href="/page{{count}}">{{count}}</a>
-        </li>
-      {% endif %}
-    {% endfor %}
-    {% if paginator.next_page %}
-      <li>
-        <a href="/page{{paginator.next_page}}">&raquo;</a>
-      </li>
-    {% else %}
-      <li class="disabled">
-        <a href="#">&raquo;</a>
-      </li>
-    {% endif %}
-  </ul>
-</div>
-{% endcomment %}
