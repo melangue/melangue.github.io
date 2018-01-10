@@ -1,8 +1,7 @@
 ---
-layout: category-post
+layout: post
 title: "Find on YouTube workflow - easy music sharing!"
-date: 2017-01-05
-categories: writing
+date: 2018-01-05
 ---
 
 I'm an Apple Music subscriber, and I listen to a lot of music. Overall I'm pretty satisfied with the service except for some personal nitpicks.
