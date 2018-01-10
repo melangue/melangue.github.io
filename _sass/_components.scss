@@ -9,6 +9,10 @@ pre {
     // padding-left: 16px;
     width: 100%; // (9 / 12 * 100%); matches col-9
     overflow-x: auto;
+    
+    @media (min-width: $breakpoint-lg) {
+      width: (12 / 10 * 100%); // slightly larger code blocks on desktop
+    }
 }
 
 code {
