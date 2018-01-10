@@ -13,17 +13,9 @@
           {% endif %}
     </li>
 
-    {% for count in (2..paginator.total_pages) %}
-      {% if count == paginator.page %}
-        <li class="inline-block pagination-item-next">
-          <a href="#">{{count}}</a>
-        </li>
-      {% else %}
-        <li class="inline-block pagination-item-next">
-          <a href="/page{{count}}">{{count}}</a>
-        </li>
-      {% endif %}
-    {% endfor %}
+   <li class="inline-block>
+              <span>{{ paginator.page}} / {{ pagionator.total_pages }}</span>
+              </li>
     
     <li class="inline-block pagination-item-next" >
           {% if paginator.next_page %}
