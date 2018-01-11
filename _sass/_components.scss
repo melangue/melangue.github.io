@@ -1,6 +1,10 @@
 // Styling markdown output
 
 // Code formatting
+pre, code {
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
 pre {
     // border-left: $spacer-1 solid $color-border;
     background-color: $white;
