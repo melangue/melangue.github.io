@@ -60,10 +60,12 @@ code {
   }
 
   img {
-
+    display: block;
     max-width: 100%;
+    margin: 0 auto;
 
-    @media (min-width: $breakpoint-lg) {
+    // oversize class
+    .oversize {
       margin-left: -(1 / 10 * 100%); // push it a bit to the left
       max-width: (12 / 10 * 100%); // make image slightly larger on desktop
     }
