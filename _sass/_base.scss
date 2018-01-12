@@ -61,3 +61,10 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+::selection {
+    background: $color-text-accent;
+    color: $body-background;
+}
+
+

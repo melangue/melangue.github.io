@@ -24,7 +24,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Variable assets path so I can easily move images
-assets_path: '/assets/'
+assets_path: '/assets'
 
 # Social links
 twitter_username: melangue
