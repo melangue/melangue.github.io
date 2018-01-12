@@ -18,19 +18,20 @@ description: |
   tinkering with (but not limited to) Apple stuff.   
   some assembly required.  
   wonky automation / workflow / scripting & misc
+description_short: ''
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-github_repo: swiss # the GitHub repo name for your project
+
+# Variable assets path so I can easily move images
+assets_path: '/assets/'
+
+# Social links
+twitter_username: melangue
 github_username: melangue
 
-# Optional social link, you can choose from the following options:
-# twitter (default), instagram, medium, or dribbble
-social_link: twitter
-social_username: melangue
-
 # Set theme color here
-# Choose from: black (default), blue, gray, magenta, orange, red, white, and yellow.
+# Only 'melangue' available
 theme_color: melangue
 
 # Plugins
@@ -77,6 +78,7 @@ compress_html:
 # - rouge code highlighting
 # - one style
 # - html compression layout
+# - when on main page blog title is the title, when on post page first is the blog title then blog title
 
 # Redone
 # - using system fonts

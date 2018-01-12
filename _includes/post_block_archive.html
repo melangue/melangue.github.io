@@ -1,5 +1,5 @@
-<!-- Renders post date and title for archive. -->
-<div class="py-1 prose"> <!-- mb-2 -->
+<!-- Renders post date and title for archive page. -->
+<div class="py-1 prose">
   <a class="no-underline h5 bold text-mute" title="{{ post.url | prepend: site.baseurl }}" href="{{ post.url | prepend: site.baseurl }}">{{ post.date | date: "%b %-d, %Y" }}</a>
   <h2 class="h2 lh-condensed col-9 mt-0">
     <a class="link-primary  text-body" title="{{ post.url | prepend: site.baseurl }}" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
