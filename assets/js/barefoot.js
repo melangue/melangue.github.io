@@ -492,6 +492,6 @@ var BareFoot = function () {
 // initiate
 
 var lf = new BareFoot({
-  scope: 'article'
+  scope: 'body'
 });
 lf.init();

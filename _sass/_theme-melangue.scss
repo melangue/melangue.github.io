@@ -12,18 +12,17 @@ $lightgrey: #bbb;
 
 // Config
 
-// Header
-$color-background: $headergrey !default;
-$color-dot-accent: $blue !default;
-$color-foreground: $white !default;
-$color-title: $white !default;
+
 
 // Main
 $color-body-text: $black !default;
 $color-text-accent: $blue !default;
 $color-text-mute: $lightgrey;
 
+// Code
 $color-code: $black !default;
+$code-background: $white !default;
+
 $color-nav-link: $blue !default;
 $color-primary-link: $blue !default;
 $body-background: $almostwhite !default;

@@ -3,7 +3,7 @@
 // Code formatting
 pre, code {
     font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
-    background-color: $white;
+    background-color: $code-background;
     border-radius: ($spacer-1 /2);
 }
 
@@ -67,7 +67,7 @@ code {
   img {
     display: block;
     max-width: 100%;
-    margin: 0 auto;
+    margin: $spacer-2 auto;
 
     // oversize class
     .oversize {

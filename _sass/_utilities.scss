@@ -42,13 +42,9 @@
 
 
 /* Theme color utilities */
-.header-background { background-color: $color-background; }
-.header-border { border-color: $color-foreground; }
-.header-title { color: $color-title; }
-.header-text { color: $color-foreground; }
 .header-social { fill: $color-text-mute; }
 .header-social:hover { fill: $color-text-accent; }
-.header-social-accent { fill: $color-dot-accent; }
+.header-social-accent { fill: $color-text-accent; }
 .header-link:hover { color: $color-nav-link !important; } // used for navigation links on homepage
 .text-accent { color: $color-text-accent; } // used for home link
 .text-mute { color: $color-text-mute !important; } // used for date in post list

@@ -1,4 +1,4 @@
-
+// Barefoot footnotes
 
 .footnote-container {
   display: inline-block;
@@ -11,14 +11,13 @@
 }
 
 .footnote-button {
-  // background: rgba(110, 110, 110, .2);
-  background: $white;
-  box-shadow: 0 1px 1px var(--shadow-color);
+  background-color: $code-background;
   border: 0;
-  border-radius: .475em;
+  border-radius: $spacer-2;
   cursor: pointer;
   display: inline-block;
-  font-size: 1.5rem;
+  font-size: ($prose-font-size * 1.3);
+  font-weight: bold;
   height: .95em;
   line-height: 0;
   margin: .2em .2em 0 .2em;
@@ -33,15 +32,12 @@
   z-index: 5;
 
   &:after {
-    font-family: 'icomoon';
-    content: "\e5d3";
+    content: "···";
     /* numbered footnotes
     content: attr(data-fn-number); */
-    // color: rgba(110, 110, 110, .5);
-    color: var(--text-color-light);
+    color: $color-body-text;
     display: block;
-    font-size: 1em;
-    font-weight: bold;
+    // font-size: $prose-font-size;
     left: 50%;
     position: absolute;
     top: 50%;
@@ -54,30 +50,26 @@
     outline: none
   }
   &:hover {
-    // background: rgba(110, 110, 110, .5);
-    background: var(--table-header-color);
+    background: rgba(110, 110, 110, .5);
     outline: none;
     &:after {
-      color: var(--text-color);
-
+      color: $color-body-text;
       outline: none;
 		}
 	}
 
   &.is-active {
-    // background: rgba(110, 110, 110, 1);
-    background: var(--table-border-color);
+    background: rgba(110, 110, 110, 1);
     transition-delay: .1s;
+    
     &:after {
-      color: var(--text-color);
+      color: $color-body-text;
 		}
 	}
 }
 
 .bf-footnote {
-  background: var(--code-bg-color);
-  // border: 1px solid var(--code-border);
-  box-shadow: 0 1px 2px var(--shadow-color);
+  background: $code-background;
   /*  border-radius: .25em; */
   left: 0;
   margin: $magic 0;
@@ -118,8 +110,7 @@
 
 .footnote-tooltip {
   background: inherit;
-  box-shadow: 0 1px 2px var(--shadow-color);
-  // border: 1px solid var(--code-border);
+  border-radius: ($spacer-1 / 2);
   height: 1.3em;
   position: absolute;
   top: -.49em;
@@ -139,7 +130,7 @@
   max-height: 15em;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
-  padding: 1em;
+  padding: $spacer-2;
   position: relative;
   z-index: 8;
   outline: none;
