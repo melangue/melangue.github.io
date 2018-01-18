@@ -2,31 +2,29 @@
 
 // Color variables
 $black: #181818;
-$headergrey: #6e6e6e;
 // $blue: #2b1bda;
 $blue: #0012FF;
 $white: #fff;
 $almostwhite: #f1f1f1;
-$grey: grey;
 $lightgrey: #bbb;
+$superlightgrey: #ddd;
+$grey: #6e6e6e;
 
 // Config
 
-
-
 // Main
+$body-background: $almostwhite !default;
 $color-body-text: $black !default;
 $color-text-accent: $blue !default;
+$color-text-light: $grey !default;
 $color-text-mute: $lightgrey;
+$color-text-supermute: $superlightgrey;
+$color-link: $blue !default;
+
 
 // Code
-$color-code: $black !default;
+$color-code: $grey !default;
 $code-background: $white !default;
-
-$color-nav-link: $blue !default;
-$color-primary-link: $blue !default;
-$body-background: $almostwhite !default;
-
 
 
 .font-smoothing {

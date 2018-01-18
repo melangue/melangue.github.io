@@ -2,6 +2,7 @@
 layout: post
 title: "No AirPods for 2 weeks"
 date: 2018-01-10
+link: http://google.com
 ---
 
 I've bought my pair of AirPods in January of 2017 and fell in love immediately. No wires, (mostly) frictionless pairing, no stuttering - awesome.

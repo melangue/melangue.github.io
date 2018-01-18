@@ -1,5 +1,17 @@
 /* Type utilities */
 
+/*.post-link {
+  position: relative;
+
+  &:before {
+    position: absolute;
+    top: 0;
+    left: (-$spacer-3 * 1.3);
+    content: '↗';
+    color: $color-text-mute;
+  }
+}*/
+
 /* Oversized header title */
 .h0 {
   font-size: $h0-mobile;
@@ -45,7 +57,7 @@
 .header-social { fill: $color-text-mute; }
 .header-social:hover { fill: $color-text-accent; }
 .header-social-accent { fill: $color-text-accent; }
-.header-link:hover { color: $color-nav-link !important; } // used for navigation links on homepage
+.header-link:hover { color: $color-link !important; } // used for navigation links on homepage
 .text-accent { color: $color-text-accent; } // used for home link
 .text-mute { color: $color-text-mute !important; } // used for date in post list
 .text-body { color: $color-body-text !important; } // used for title in post list
@@ -186,7 +198,7 @@
 
   // Underline on hover  
   &:hover {
-    color: $color-primary-link;
+    color: $color-link;
     text-decoration: underline;
   }
 }

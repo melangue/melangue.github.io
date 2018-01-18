@@ -32,10 +32,10 @@ code {
 
   a {
     text-decoration: none;
-    color: $color-primary-link;
+    color: $color-link;
   
     &:hover {
-      color: $color-primary-link;
+      color: $color-link;
       text-decoration: underline;
     }
   }
@@ -81,10 +81,11 @@ code {
     line-height: 1.5;
     padding-left: 20px;
     margin: 32px 0 32px -16px;
-    border-left: $spacer-1 solid $color-border;
+    border-left: $spacer-1 solid $color-text-supermute;
 
 
     p {
+      color: $color-text-light;
       font-size: 20px;
     }
 

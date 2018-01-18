@@ -79,6 +79,7 @@ compress_html:
 # - one style
 # - html compression layout
 # - when on main page blog title is the title, when on post page first is the blog title then blog title
+# - initial link post support
 
 # Redone
 # - using system fonts
