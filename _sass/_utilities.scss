@@ -45,6 +45,44 @@
   padding-left: 0;
 }
 
+/* Typing cursor animation */
+.blinking-cursor {
+  opacity: 1;
+  -webkit-animation: blink 1.2s infinite;
+  animation: blink 1.2s infinite;
+  border-right: 9px solid #1de9b6;
+  letter-spacing: -30px;
+  color: transparent;
+  position: relative;
+  bottom: -2px;
+  font-size: 0.925em;
+  -webkit-animation-timing-function: step-start;
+  animation-timing-function: step-start; }
+
+@media (max-width: 400px) {
+  .blinking-cursor {
+    border-right-width: 7px;
+    bottom: 0; } 
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } 
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; }
+}
+
 /* Border utilities */
 .border-bottom-thick { border-bottom: 2px solid; border-color: currentColor; }
 .border-bottom-thin { border-bottom: 1px solid; border-color: currentColor; }
